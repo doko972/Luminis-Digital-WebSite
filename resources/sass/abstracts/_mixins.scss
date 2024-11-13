@@ -1,0 +1,28 @@
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin container {
+    width: 90%;
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: $transition-default;
+}
